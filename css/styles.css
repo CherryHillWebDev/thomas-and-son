@@ -332,6 +332,7 @@ a.cta {
 
 .hero-img img {
     transform: scaleY(102%);
+    width: 100%;
 }
 
 .title-holder {
