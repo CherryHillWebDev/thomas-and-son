@@ -20,6 +20,16 @@
     --size7: 6rem;
 }
 
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url(../fonts/Anton-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
