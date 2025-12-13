@@ -106,29 +106,66 @@
             </nav>
         </div>
     </header>
-    <section class="contact">
-        <div class="contact-form-container">
-            <div class="contact-container">
-                <div class="email-form" id="email-form">
-                    <h1>GET YOUR FREE QUOTE TODAY!</h1>
-                    <form target="_blank" action="https://formsubmit.co/nick@thomasandsonlandscaping.com" method="POST">
-                        <div class="form-group">
-                            <div class="form-row">
-                                <input type="hidden" name="_subject" id="_subject" value="New Form Submission from {{ name }}" />
-                                <input type="text" name="name" id="name" placeholder="Full Name*" required>
-                                <input type="email" name="email" id="email" placeholder="Email Address*" required>
-                                <input type="text" name="phone-number" id="phone-number" placeholder="What's your phone number?">
-                                <input type="text" name="location" id="location" placeholder="Where are you located?">
-                            </div>
-                            <div class="email-body">
-                                <textarea placeholder="Your Message*" name="message" rows="10" required></textarea>
-                            </div>
+    <section class="contact-section">
+        <h1>CONTACT US</h1>
+        <div class="contact-page-container">
+            <div class="contact-page-info-holder">
+                <h2 style="text-align: left">GET IN TOUCH</h2>
+                <p>Call us or send an email and let us know how we can help you. If we are unavailable we will reach back out within 24 hours. You can also schedule a service or free quote for all your landscaping and home-care needs using the form on this page</p>
+                <div class="contact-info-holder-inner">
+                    <div class="contact-page-info-line">
+                        <div class="img-wrapper contact-page-icon">
+                            <img src="../img/contact-page/phone-icon-gray.svg">
                         </div>
-                        <button class="submit-btn cta" type="submit" onclick="submitEmail()"><span>Send Email!</span></button>
-                    </form>
+                        <div class="contact-line-text">
+                            <h3>PHONE</h3>
+                            <p><a href='tel:609-415-3735'>(609) 415-3735</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-page-info-line">
+                        <div class="img-wrapper contact-page-icon">
+                            <img src="../img/contact-page/email-icon-gray.svg">
+                        </div>
+                        <div class="contact-line-text">
+                            <h3>EMAIL</h3>
+                            <p><a href='mailto:nick@thomasandsonlandscaping.com'>Click to email</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-page-info-line">
+                        <div class="img-wrapper contact-page-icon">
+                            <img src="../img/contact-page/map-pin-gray.svg">
+                        </div>
+                        <div class="contact-line-text">
+                            <h3>AREAS SERVED</h3>
+                            <p>South Jersey and Surrounding Counties</p>
+                        </div>
+                    </div>    
                 </div>
             </div>
+            <div class="contact-form-container">
+                <div class="contact-container">
+                    <div class="email-form" id="email-form">
+                        <h2>SCHEDULE A SERVICE</h2>
+                        <form target="_blank" action="https://formsubmit.co/nick@thomasandsonlandscaping.com" method="POST">
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <input type="hidden" name="_subject" id="_subject" value="New Form Submission from {{ name }}" />
+                                    <input type="text" name="name" id="name" placeholder="Full Name*" required>
+                                    <input type="email" name="email" id="email" placeholder="Email Address*" required>
+                                    <input type="text" name="phone-number" id="phone-number" placeholder="What's your phone number?">
+                                    <input type="text" name="location" id="location" placeholder="Where are you located?">
+                                </div>
+                                <div class="email-body">
+                                    <textarea placeholder="Your Message*" name="message" rows="10" required></textarea>
+                                </div>
+                            </div> 
+                            <button class="submit-btn cta" type="submit" onclick="submitEmail()"><span>Send Email!</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>    
         </div>
+        
     </section>
     <footer>
         <div class="footer-holder">

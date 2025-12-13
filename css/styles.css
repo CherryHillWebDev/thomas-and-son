@@ -18,6 +18,7 @@
     --size5: 4rem;
     --size6: 5rem;
     --size7: 6rem;
+    --theme-font: 'Anton'
 }
 
 @font-face {
@@ -30,6 +31,31 @@
     font-family: 'Anton';
     src: url(../fonts/Anton-Regular.ttf);
     font-display: swap;
+}
+
+.ghost-btn {
+    background: none;
+    padding: 0.5rem 1rem;
+    border: solid 2px var(--cta);
+    color: var(--cta);
+    margin: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.ghost-btn:hover {
+    background-color: var(--cta);
+    color: var(--off-white);
+}
+
+.content-container {
+    width: 100%;
+    padding: 1rem;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 * {
@@ -1174,16 +1200,88 @@ a.cta {
 
 /* ------ CONTACT FORM PAGE ------ */
 
-.contact-form-container {
+.contact-section {
     background-color: #195c18;
     background-image: url('../img/contact-form-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    min-height: 1000px;
+    padding-bottom: 1rem;
+}
+
+.contact-section h1 {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 75px;
+    font-family: var(--theme-font);
+    color: var(--off-white);
+    font-weight: 100;
+}
+
+.contact-page-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.contact-page-info-holder {
+    border-radius: 15px;
+    padding: 1em;
+    min-width: 450px;
+    max-width: 600px;
+    color: var(--off-white);
+}
+
+.contact-info-holder-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.contact-page-info-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-page-icon {
+    height: 65px;
+    aspect-ratio: 1 / 1;
+}
+
+.contact-line-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-line-text h3, .contact-line-text p {
+    margin: 0;
+}
+
+.contact-line-text h3 {
+    font-family: var(--theme-font);
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.contact-line-text p{
+    color: #d1d1d1;
+}
+
+.contact-line-text a {
+    text-decoration: none;
+    color: unset;
+}
+
+.contact-line-text a:hover {
+    text-decoration: underline;
 }
 
 .contact-container {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1193,8 +1291,7 @@ a.cta {
     background: #aaaaaa5e;
     backdrop-filter: blur(5px);
     position: relative;
-    width: 60%;
-    margin: 3em auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1202,14 +1299,16 @@ a.cta {
     border-radius: 15px;
     text-align: center;
     padding: 1em;
+    min-width: 650px;
 }
 
-.email-form h1 {
+.email-form h2, .contact-page-info-holder h2 {
     color: var(--white);
     font-weight: 100;
-    font-size: 50px;
+    font-size: 40px;
     color: var(--off-white);
     font-family: 'Anton';
+    text-align: center;
 }
 
 .form-group {
@@ -1564,11 +1663,18 @@ a.cta {
 
 .indser-text-container {
     padding: 3rem;
-    text-align: center;
 }
 
 .larger {
     max-width: 700px !important;
+}
+
+.largest {
+    max-width: 1000px !important;
+}
+
+.centered {
+    text-align: center;
 }
 
 .indser-text-container h1 {
@@ -1579,6 +1685,12 @@ a.cta {
     margin-bottom: 0;
     letter-spacing: -2px;
     line-height: 0.95;
+    text-align: center;
+}
+
+.indser-text-container h2 {
+    color: var(--theme);
+    text-align: center;
 }
 
 .indser-text-container p {
@@ -1613,6 +1725,7 @@ a.cta {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 200px;
 }
 
 .content-item img {
@@ -1620,9 +1733,38 @@ a.cta {
     width: 100px
 }
 
+.icon-label {
+    font-size: clamp(1rem, 0.8684rem + 0.5263vw, 1.5rem);
+    color: var(--theme);
+    font-weight: 800;
+}
+
+.content-holder-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
 @keyframes rotate {
     to {
         transform: translateX(-50%)
+    }
+}
+
+@media screen and (max-width: 1385px) {
+    .content-holder-reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-page-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .contact-page-info-holder {
+        margin: 0 auto 1rem;
     }
 }
 
@@ -1729,8 +1871,13 @@ a.cta {
         justify-content: flex-start;
     }
 
+    .contact-page-info-holder {
+        min-width: unset;
+    }
+
     .email-form {
         width: 90%;
+        min-width: unset;
     }
 }
 
@@ -1826,6 +1973,11 @@ a.cta {
 
     .indser-text-container ul {
         width: 80%;
+    }
+
+    .indser-text-container.extra-padding {
+        padding-left: 1rem !important;
+        padding-right: 1rem;
     }
 
     .dropdown-menu {
