@@ -12,10 +12,13 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="./css/styles.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./css/styles.css"></noscript>
-    <link rel="preload" href="/fonts/Anton-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/fonts/DMSans-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin>
+    <meta name="description" content="Thomas & Son Landscaping LLC delivers expert lawn care, landscaping, and property maintenance in South Jersey & Philadelphia. Free estimates available.">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preload" href="/fonts/Anton-Regular.woff2" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/DMSans-VariableFont_opsz,wght.woff2" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" as="image" href="/img/hero-img-1920.webp" media="(min-width: 1025px)">
+    <link rel="preload" as="image" href="/img/hero-img-1024.webp" media="(min-width: 641px)">
+    <link rel="preload" as="image" href="/img/hero-img-640.webp" media="(max-width: 640px)">
     <meta name="description" content="Thomas & Son Landscaping LLC provides expert lawn care and property services in Vineland, South Jersey, and Philadelphia. From mowing and pruning to snow removal, power washing, and more, we keep your property looking its best year-round.">
     <meta name="keywords" content="lawn care Vineland, landscaping South Jersey, lawn mowing Philadelphia, property maintenance, outdoor services">
     <link rel="canonical" href="https://www.thomasandsonlandscaping.com/">
@@ -318,16 +321,16 @@
         <div class="header">
             <div class="header-left">
                 <div class="logo img-wrapper">
-                    <a href='./index.html'><img src="./img/logo.webp" alt="thomas-and-son-logo"></a>
+                    <a href='/index.html'><img src="/img/logo.webp" alt="thomas-and-son-logo"></a>
                 </div>
                 <div class="comp-name img-wrapper">
-                    <a href='./index.html'><img src="./img/company-name.svg" alt="company-name"></a>
+                    <a href='/index.html'><img src="/img/company-name.svg" alt="company-name"></a>
                 </div>
             </div>
             <div class="header-center">
                 <div class="contact-box">
                     <span class="contact-icon img-wrapper">
-                        <img src="./img/phone-icon.svg" height="50px" width="50px" alt="phone-icon">
+                        <img src="/img/phone-icon.svg" height="50px" width="50px" alt="phone-icon">
                     </span>
                     <div class="contact-info">
                         <p class="contact-label">Phone Number:</p>
@@ -336,7 +339,7 @@
                 </div>
                 <div class="contact-box">
                     <span class="contact-icon img-wrapper">
-                        <img src="./img/email-icon.svg" alt="email-icon">
+                        <img src="/img/email-icon.svg" alt="email-icon">
                     </span>
                     <div class="contact-info">
                         <p class="contact-label">Email:</p>
@@ -346,26 +349,36 @@
             </div>
             <nav>
                 <div class="header-right">
-                    <a class="link selected large">HOME</a>
+                    <a href="/index.html" class="link selected large">HOME</a>
                     <div class="dropdown">
-                        <a href="./pages/services.html" class="link large">SERVICES</a>
+                        <a href="/services.html" class="link large">SERVICES</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./pages/services/lawn-mowing.html">Lawn Mowing</a></li>
-                            <li><a href="./pages/services/aeration-dethatching.html">Aeration & Dethatching</a></li>
-                            <li><a href="./pages/services/mulch.html">Mulch Installation</a></li>
-                            <li><a href="./pages/services/pruning.html">Bush & Tree Pruning</a></li>
-                            <li><a href="./pages/services/leaf-removal.html">Leaf Removal & Disposal</a></li>
-                            <li><a href="./pages/services/gutter-cleaning.html">Gutter Cleaning</a></li>
-                            <li><a href="./pages/services/snow-removal.html">Snow Removal</a></li>
-                            <li><a href="./pages/services/ice-prevention.html">Ice Prevention</a></li>
-                            <li><a href="./pages/services/soft-washing.html">Soft Washing</a></li>
-                            <li><a href="./pages/services/power-washing.html">Power Washing</a></li>
-                            <li><a href="./pages/services/junk-removal.html">Junk Removal</a></li>
+                            <li><a href="/services/lawn-mowing.html">Lawn Mowing</a></li>
+                            <li><a href="/services/aeration-dethatching.html">Aeration & Dethatching</a></li>
+                            <li><a href="/services/mulch.html">Mulch Installation</a></li>
+                            <li><a href="/services/pruning.html">Bush & Tree Pruning</a></li>
+                            <li><a href="/services/leaf-removal.html">Leaf Removal & Disposal</a></li>
+                            <li><a href="/services/gutter-cleaning.html">Gutter Cleaning</a></li>
+                            <li><a href="/services/snow-removal.html">Snow Removal</a></li>
+                            <li><a href="/services/ice-prevention.html">Ice Prevention</a></li>
+                            <li><a href="/services/soft-washing.html">Soft Washing</a></li>
+                            <li><a href="/services/power-washing.html">Power Washing</a></li>
+                            <li><a href="/services/junk-removal.html">Junk Removal</a></li>
                         </ul>
+                        </div>
+                    <div class="dropdown">
+                        <a class="link large">LOCATIONS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/locations/landscaping-cherry-hill-nj.html">Cherry Hill</a></li>
+                            <li><a href="/locations/landscaping-haddonfield-nj.html">Haddonfield</a></li>
+                            <li><a href="/locations/landscaping-haddon-heights-nj.html">Haddon Heights</a></li>
+                            <li><a href="/locations/landscaping-haddon-township-nj.html">Haddon Township</a></li>
+                            <li><a href="/locations/landscaping-marlton-nj.html">Marlton</a></li>
+                        </ul>    
                     </div>
-                    <a href="./pages/about.html" class="link large">ABOUT</a>
-                    <a href="./pages/gallery.html" class="link large">GALLERY</a>
-                    <a href="./pages/contact.html" class="contact large cta">CONTACT</a>
+                    <a href="/about.html" class="link large">ABOUT</a>
+                    <a href="/gallery.html" class="link large">GALLERY</a>
+                    <a href="/contact.html" class="contact large cta">CONTACT</a>
 
                     <div class="hamburger" onclick="toggleMobileMenu()">
                         <span></span>
@@ -375,27 +388,37 @@
             
                     <div class="mobile-nav" id="mobileNav">
                         <div class="nav-links">
-                            <a class="link selected" href="#home">HOME</a>
+                            <a href="/index.html" class="link selected">HOME</a>
                             <div class="dropdown">
                                 <a class="mobile-services">SERVICES</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="./pages/services.html">All Services</a></li>
-                                    <li><a href="./pages/services/lawn-mowing.html">Lawn Mowing</a></li>
-                                    <li><a href="./pages/services/aeration-dethatching.html">Aeration & Dethatching</a></li>
-                                    <li><a href="./pages/services/mulch.html">Mulch Installation</a></li>
-                                    <li><a href="./pages/services/pruning.html">Bush & Tree Pruning</a></li>
-                                    <li><a href="./pages/services/leaf-removal.html">Leaf Removal & Disposal</a></li>
-                                    <li><a href="./pages/services/gutter-cleaning.html">Gutter Cleaning</a></li>
-                                    <li><a href="./pages/services/snow-removal.html">Snow Removal</a></li>
-                                    <li><a href="./pages/services/ice-prevention.html">Ice Prevention</a></li>
-                                    <li><a href="./pages/services/soft-washing.html">Soft Washing</a></li>
-                                    <li><a href="./pages/services/power-washing.html">Power Washing</a></li>
-                                    <li><a href="./pages/services/junk-removal.html">Junk Removal</a></li>
+                                    <li><a href="/services.html">All Services</a></li>
+                                    <li><a href="/services/lawn-mowing.html">Lawn Mowing</a></li>
+                                    <li><a href="/services/aeration-dethatching.html">Aeration & Dethatching</a></li>
+                                    <li><a href="/services/mulch.html">Mulch Installation</a></li>
+                                    <li><a href="/services/pruning.html">Bush & Tree Pruning</a></li>
+                                    <li><a href="/services/leaf-removal.html">Leaf Removal & Disposal</a></li>
+                                    <li><a href="/services/gutter-cleaning.html">Gutter Cleaning</a></li>
+                                    <li><a href="/services/snow-removal.html">Snow Removal</a></li>
+                                    <li><a href="/services/ice-prevention.html">Ice Prevention</a></li>
+                                    <li><a href="/services/soft-washing.html">Soft Washing</a></li>
+                                    <li><a href="/services/power-washing.html">Power Washing</a></li>
+                                    <li><a href="/services/junk-removal.html">Junk Removal</a></li>
                                 </ul>
                             </div>
-                            <a href="./pages/about.html" class="link" href="#about">ABOUT</a>
-                            <a href="./pages/gallery.html" class="link" href="#gallery">GALLERY</a>
-                            <a href="./pages/contact.html" class="contact cta">CONTACT</a>
+                            <div class="dropdown">
+                                <a class="mobile-services">LOCATIONS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/locations/landscaping-cherry-hill-nj.html">Cherry Hill</a></li>
+                                    <li><a href="/locations/landscaping-haddonfield-nj.html">Haddonfield</a></li>
+                                    <li><a href="/locations/landscaping-haddon-heights-nj.html">Haddon Heights</a></li>
+                                    <li><a href="/locations/landscaping-haddon-township-nj.html">Haddon Township</a></li>
+                                    <li><a href="/locations/landscaping-marlton-nj.html">Marlton</a></li>
+                                </ul>
+                            </div>
+                            <a href="/about.html" class="link" href="#about">ABOUT</a>
+                            <a href="/gallery.html" class="link" href="#gallery">GALLERY</a>
+                            <a href="/contact.html" class="contact cta">CONTACT</a>
                         </div>
                     </div>
                 </div>
@@ -403,9 +426,14 @@
         </div>
     </header>
     <div class="banner">
-        <div class="hero-img img-wrapper">
-            <img src="./img/banner 500x125.jpg" fetchpriority="high" width="1500px" height="375px" alt="pruning bushes by hand">
-        </div>
+        <!-- <div class="hero-img img-wrapper">
+            <img src="/img/banner 500x125.jpg" fetchpriority="high" width="1500px" height="375px" alt="pruning bushes by hand">
+        </div> -->
+        <picture class="hero-img img-wrapper">
+            <source media="(min-width: 1025px)" srcset="/img/hero-img-1920.webp">
+            <source media="(min-width: 641px)" srcset="/img/hero-img-1024.webp">
+            <img src="/img/hero-img-640.webp" alt="Hero background" fetchpriority="high">
+        </picture>
         <div class="circle">
             
         </div>
@@ -415,8 +443,8 @@
                 <h1>BUILD YOUR DREAM YARD</h1>
             </div>
             <div class="title-buttons">
-                <a href="./pages/contact.html" class="quote-link">Get a free quote!</a>
-                <a href="./pages/gallery.html" class="gallery-link">See our work</a>
+                <a href="/contact.html" class="quote-link">Get a free quote!</a>
+                <a href="/gallery.html" class="gallery-link">See our work</a>
             </div>
         </div>
     </div>
@@ -446,7 +474,7 @@
             <div class="services-body">
                 <div class="page-title-holder">
                     <div class="img-wrapper title-img">
-                        <img src="./img/banner 700x200.webp" alt="gallery image of landscaping services">
+                        <img src="/img/banner 700x200.webp" alt="gallery image of landscaping services in New Jersey">
                     </div>
                     <div class="page-title">
                         <p class="page-title-link"><a>→ About Us</a></p>
@@ -476,7 +504,7 @@
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/lawnmowing/Thomas_and_Son_Landscaping_Oaklyn_Lawn_Mowing.webp" alt="Lawn mowing" draggable="false">
+                                    <img src="/img/lawnmowing/Thomas_and_Son_Landscaping_Oaklyn_Lawn_Mowing.webp" alt="Lawn mowing" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -489,14 +517,14 @@
                                             <div class="stat-number">Lawn Services</div>
                                             <div class="stat-label">15% off if season paid upfront!</div>
                                         </div>
-                                        <a href="./pages/services/lawn-mowing.html" class="action-btn btn-green">→</a>
+                                        <a href="/services/lawn-mowing.html" class="action-btn btn-green">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/aeration/Thomas_and_Son_Landscaping_Haddon_Heights_Aeration.webp" alt="Aerating soil" draggable="false">
+                                    <img src="/img/aeration/Thomas_and_Son_Landscaping_Haddon_Heights_Aeration.webp" alt="Aerating soil" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -509,14 +537,14 @@
                                             <div class="stat-number">Aeration Page</div>
                                             <div class="stat-label">Breathe new life into your yard</div>
                                         </div>
-                                        <a href="./pages/services/aeration-dethatching.html" class="action-btn btn-blue">→</a>
+                                        <a href="/services/aeration-dethatching.html" class="action-btn btn-blue">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/mulch/Thomas_and_Son_Landscaping_Vineland_Mulch_Installation.webp" alt="Mulch installation" draggable="false">
+                                    <img src="/img/mulch/Thomas_and_Son_Landscaping_Vineland_Mulch_Installation.webp" alt="Mulch installation" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -529,14 +557,14 @@
                                             <div class="stat-number">Mulch Services</div>
                                             <div class="stat-label">High-quality mulch</div>
                                         </div>
-                                        <a href="./pages/services/mulch.html" class="action-btn btn-yellow">→</a>
+                                        <a href="/services/mulch.html" class="action-btn btn-yellow">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/pruning/Thomas_and_Son_Landscaping_Collingswood_Bush_Pruning.webp" alt="Bush and tree pruning" draggable="false">
+                                    <img src="/img/pruning/Thomas_and_Son_Landscaping_Collingswood_Bush_Pruning.webp" alt="Bush and tree pruning" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -549,14 +577,14 @@
                                             <div class="stat-number">Bush & Tree</div>
                                             <div class="stat-label">Expert care for every season</div>
                                         </div>
-                                        <a href="./pages/services/pruning.html" class="action-btn btn-orange">→</a>
+                                        <a href="/services/pruning.html" class="action-btn btn-orange">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/leaves/Thomas_and_Son_Landscaping_Haddonfield_Leaf_Removal.webp" alt="Leaf removal" draggable="false">
+                                    <img src="/img/leaves/Thomas_and_Son_Landscaping_Haddonfield_Leaf_Removal.webp" alt="Leaf removal" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -569,14 +597,14 @@
                                             <div class="stat-number">Leaf Services</div>
                                             <div class="stat-label">No more autumn hassle</div>
                                         </div>
-                                        <a href="./pages/services/leaf-removal.html" class="action-btn btn-green">→</a>
+                                        <a href="/services/leaf-removal.html" class="action-btn btn-green">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/gutter/Thomas_and_Son_Landscaping_Oaklyn_Gutter_Cleaning.webp" alt="Cleaning out gutters" draggable="false">
+                                    <img src="/img/gutter/Thomas_and_Son_Landscaping_Oaklyn_Gutter_Cleaning.webp" alt="Cleaning out gutters" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -589,14 +617,14 @@
                                             <div class="stat-number">Gutters</div>
                                             <div class="stat-label">Protect your whole home</div>
                                         </div>
-                                        <a href="./pages/services/gutter-cleaning.html" class="action-btn btn-blue">→</a>
+                                        <a href="/services/gutter-cleaning.html" class="action-btn btn-blue">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/snow/Thomas_and_Son_Landscaping_Oaklyn_Snow_Removal.webp" alt="Oaklyn snow removal by Thomas and Son Landscaping" draggable="false">
+                                    <img src="/img/snow/Thomas_and_Son_Landscaping_Oaklyn_Snow_Removal.webp" alt="Oaklyn snow removal by Thomas and Son Landscaping" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -609,14 +637,14 @@
                                             <div class="stat-number">Snow Removal</div>
                                             <div class="stat-label">Clean walkways and driveways!</div>
                                         </div>
-                                        <a href="./pages/services/snow-removal.html" class="action-btn btn-yellow">→</a>
+                                        <a href="/services/snow-removal.html" class="action-btn btn-yellow">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/ice/Thomas_and_Son_Landscaping_Haddonfield_Ice_Prevention.webp" alt="Ice Prevention in Oaklyn by Thomas and Son Landscaping LLC" draggable="false">
+                                    <img src="/img/ice/Thomas_and_Son_Landscaping_Haddonfield_Ice_Prevention.webp" alt="Ice Prevention in Oaklyn by Thomas and Son Landscaping LLC" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -629,14 +657,14 @@
                                             <div class="stat-number">Ice Services</div>
                                             <div class="stat-label">It costs less to act earlier!</div>
                                         </div>
-                                        <a href="./pages/services/ice-prevention.html" class="action-btn btn-orange">→</a>
+                                        <a href="/services/ice-prevention.html" class="action-btn btn-orange">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/soft-clean/Thomas_and_Son_Landscaping_Cherry_Hill_Soft_Washing.webp" alt="Soft washing a house in South Jersey by Thomas and Son LLC" draggable="false">
+                                    <img src="/img/soft-clean/Thomas_and_Son_Landscaping_Cherry_Hill_Soft_Washing.webp" alt="Soft washing a house in South Jersey by Thomas and Son LLC" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -649,14 +677,14 @@
                                             <div class="stat-number">Soft Wash Services</div>
                                             <div class="stat-label">Gentle for delicate surfaces</div>
                                         </div>
-                                        <a href="./pages/services/soft-washing.html" class="action-btn btn-green">→</a>
+                                        <a href="/services/soft-washing.html" class="action-btn btn-green">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/power/Thomas_and_Son_Landscaping_Cherry_Hill_Pressure_Washing.webp" alt="Power washing a walkway in South Jersey by Thomas and Son LLC" draggable="false">
+                                    <img src="/img/power/Thomas_and_Son_Landscaping_Cherry_Hill_Pressure_Washing.webp" alt="Power washing a walkway in South Jersey by Thomas and Son LLC" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -669,14 +697,14 @@
                                             <div class="stat-number">Power Washes</div>
                                             <div class="stat-label">Shiny tough-to-clean surfaces</div>
                                         </div>
-                                        <a href="./pages/services/power-washing.html" class="action-btn btn-blue">→</a>
+                                        <a href="/services/power-washing.html" class="action-btn btn-blue">→</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="./img/service-img-6.jpg" alt="A full dumpster removing junk from a South Jerseyt property by Thomas and Son LLC" draggable="false">
+                                    <img src="/img/service-img-6.jpg" alt="A full dumpster removing junk from a South Jerseyt property by Thomas and Son LLC" draggable="false">
                                 </div>
                                 <div class="card-content">
                                     <div class="card-address">
@@ -689,7 +717,7 @@
                                             <div class="stat-number">Junk Services</div>
                                             <div class="stat-label">Dumpster or dump-trailer</div>
                                         </div>
-                                        <a href="./pages/services/junk-removal.html" class="action-btn btn-yellow">→</a>
+                                        <a href="/services/junk-removal.html" class="action-btn btn-yellow">→</a>
                                     </div>
                                 </div>
                             </div>
@@ -703,12 +731,12 @@
         <section class="gallery">
             <div class="gallery-section">
                 <div class="gallery-bg img-wrapper">
-                    <img src="./img/process-img 1366x768.jpg" alt="landscaping services">
+                    <img src="/img/process-img 1366x768.jpg" alt="landscaping services">
                 </div>
                 <div class="gallery-content">
                     <h2 class="fade-on-scroll">SEE OUR WORK!</h2>
                     <p class="fade-on-scroll">Our gallery shows why customers continue to choose us - check it out!</p>
-                    <a href="./pages/gallery.html" class="cta gallery-btn fade-on-scroll">Visit Gallery</a>
+                    <a href="/gallery.html" class="cta gallery-btn fade-on-scroll">Visit Gallery</a>
                 </div>
             </div>
         </section>
@@ -728,11 +756,11 @@
                 <p>Here's what people are saying about our work</p>
             </div>
             <div class="reviews-container">
-                <iframe class='lc_reviews_widget' src='https://reputationhub.site/reputation/widgets/review_widget/Mv6LO2uhdVfQdR3N1ul9' frameborder='0' scrolling='no' style='min-width: 100%; width: 100%;'></iframe>
+                <iframe class='lc_reviews_widget' src='https://reputationhub.site/reputation/widgets/review_widget/Mv6LO2uhdVfQdR3N1ul9' loading="lazy" frameborder='0' scrolling='no' title="Customer reviews and ratings" style='min-width: 100%; width: 100%;'></iframe>
                 
                 <!-- <div class="review-card">
                     <span class="img-wrapper review-quote">
-                        <img src="./img/quotation-mark.svg" alt="quotation-mark icon">
+                        <img src="/img/quotation-mark.svg" alt="quotation-mark icon">
                     </span>
                     <span class="review">
                         <p>Where do I start. They say they will be there and they are there. Communication is great. Prices are spot on. Happy to help and be fair. Honestly some of the best people I've come across in a long time... <span class="link-to-google"><a target="_blank" href="https://www.google.com/search?q=thomas+and+son+landscaping&rlz=1C1ONGR_enUS1138US1138&oq=th&gs_lcrp=EgZjaHJvbWUqDggCEEUYJxg7GIAEGIoFMgYIABBFGDwyBggBEEUYOTIOCAIQRRgnGDsYgAQYigUyDggDEEUYJxg7GIAEGIoFMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNzM5ajFqN6gCCLACAfEFv8obupGZmsk&sourceid=chrome&ie=UTF-8#lrd=0x81d4adc72cbdeed1:0xb362bc220431d2ef,1,,,,">see more</a></span></p>
@@ -743,7 +771,7 @@
                 </div>
                 <div class="review-card">
                     <span class="img-wrapper review-quote">
-                        <img src="./img/quotation-mark.svg" alt="quotation-mark icon">
+                        <img src="/img/quotation-mark.svg" alt="quotation-mark icon">
                     </span>
                     <span class="review">
                         <p>Nick and his crew have been out to my house a few times already and their work is always great!  Nick worked really hard with me to surprise my husband with one thing... <span class="link-to-google"><a target="_blank" href="https://www.google.com/search?q=thomas+and+son+landscaping&rlz=1C1ONGR_enUS1138US1138&oq=th&gs_lcrp=EgZjaHJvbWUqDggCEEUYJxg7GIAEGIoFMgYIABBFGDwyBggBEEUYOTIOCAIQRRgnGDsYgAQYigUyDggDEEUYJxg7GIAEGIoFMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNzM5ajFqN6gCCLACAfEFv8obupGZmsk&sourceid=chrome&ie=UTF-8#lrd=0x81d4adc72cbdeed1:0xb362bc220431d2ef,1,,,,">see more</a></span></p>
@@ -754,7 +782,7 @@
                 </div>
                 <div class="review-card">
                     <span class="img-wrapper review-quote">
-                        <img src="./img/quotation-mark.svg" alt="quotation-mark icon">
+                        <img src="/img/quotation-mark.svg" alt="quotation-mark icon">
                     </span>
                     <span class="review">
                         <p>Exceptional Service from Thomas and Son Landscaping LLC I was thoroughly impressed with the work done by them. They transformed my neglected yard into a beautiful... <span class="link-to-google"><a target="_blank" href="https://www.google.com/search?q=thomas+and+son+landscaping&rlz=1C1ONGR_enUS1138US1138&oq=th&gs_lcrp=EgZjaHJvbWUqDggCEEUYJxg7GIAEGIoFMgYIABBFGDwyBggBEEUYOTIOCAIQRRgnGDsYgAQYigUyDggDEEUYJxg7GIAEGIoFMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNzM5ajFqN6gCCLACAfEFv8obupGZmsk&sourceid=chrome&ie=UTF-8#lrd=0x81d4adc72cbdeed1:0xb362bc220431d2ef,1,,,,">see more</a></span></p>
@@ -765,7 +793,7 @@
                 </div>
                 <div class="review-card">
                     <span class="img-wrapper review-quote">
-                        <img src="./img/quotation-mark.svg" alt="quotation-mark icon">
+                        <img src="/img/quotation-mark.svg" alt="quotation-mark icon">
                     </span>
                     <span class="review">
                         <p>Thomas and Son offer great service. Offer Grasscutting and edging at a very reasonable rate. Their communication is outstanding and very personable. Flexible with their times and always... <span class="link-to-google"><a target="_blank" href="https://www.google.com/search?q=thomas+and+son+landscaping&rlz=1C1ONGR_enUS1138US1138&oq=th&gs_lcrp=EgZjaHJvbWUqDggCEEUYJxg7GIAEGIoFMgYIABBFGDwyBggBEEUYOTIOCAIQRRgnGDsYgAQYigUyDggDEEUYJxg7GIAEGIoFMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNzM5ajFqN6gCCLACAfEFv8obupGZmsk&sourceid=chrome&ie=UTF-8#lrd=0x81d4adc72cbdeed1:0xb362bc220431d2ef,1,,,,">see more</a></span></p>
@@ -776,7 +804,7 @@
                 </div>
                 <div class="review-card">
                     <span class="img-wrapper review-quote">
-                        <img src="./img/quotation-mark.svg" alt="quotation-mark icon">
+                        <img src="/img/quotation-mark.svg" alt="quotation-mark icon">
                     </span>
                     <span class="review">
                         <p>Honestly? Best people I've met. Good conversation. Good work. Good time. In and out. Got it right, the first time. My brother had them come out and do some of his commercial... <span class="link-to-google"><a target="_blank" href="https://www.google.com/search?q=thomas+and+son+landscaping&rlz=1C1ONGR_enUS1138US1138&oq=th&gs_lcrp=EgZjaHJvbWUqDggCEEUYJxg7GIAEGIoFMgYIABBFGDwyBggBEEUYOTIOCAIQRRgnGDsYgAQYigUyDggDEEUYJxg7GIAEGIoFMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNzM5ajFqN6gCCLACAfEFv8obupGZmsk&sourceid=chrome&ie=UTF-8#lrd=0x81d4adc72cbdeed1:0xb362bc220431d2ef,1,,,,">see more</a></span></p>
@@ -787,7 +815,7 @@
                 </div>
                 <div class="review-card">
                     <span class="img-wrapper review-quote">
-                        <img src="./img/quotation-mark.svg" alt="quotation-mark icon">
+                        <img src="/img/quotation-mark.svg" alt="quotation-mark icon">
                     </span>
                     <span class="review">
                         <p>I highly recommend Nickolas. He’s reliable and efficient. He gave me a wonderful price and didn’t try changing it at the last minute. He cut down 2 ugly trees, cleaned up the mess, and hauled it away... <span class="link-to-google"><a target="_blank" href="https://www.google.com/search?q=thomas+and+son+landscaping&rlz=1C1ONGR_enUS1138US1138&oq=th&gs_lcrp=EgZjaHJvbWUqDggCEEUYJxg7GIAEGIoFMgYIABBFGDwyBggBEEUYOTIOCAIQRRgnGDsYgAQYigUyDggDEEUYJxg7GIAEGIoFMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNzM5ajFqN6gCCLACAfEFv8obupGZmsk&sourceid=chrome&ie=UTF-8#lrd=0x81d4adc72cbdeed1:0xb362bc220431d2ef,1,,,,">see more</a></span></p>
@@ -810,29 +838,29 @@
         <div class="footer-holder">
             <div class="footer-divider top-one">
                 <div class="footer-contact-button">
-                    <a href="./pages/contact.html" class="footer-link cta">Get Your Free Quote Today!</a>
+                    <a href="/contact.html" class="footer-link cta">Get Your Free Quote Today!</a>
                 </div>
             </div>
             <div class="footer-top-grid">
                 <div class="img-wrapper footer-logo">
-                    <img src="./img/logo-dark.svg" alt="company logo">
+                    <img src="/img/logo-dark.svg" alt="company logo">
                 </div>
                 <div class="footer-info">
                     <span class="footer-info-line">
                         <div class="img-wrapper info-pic">
-                            <img src="./img/map-icon.svg" alt="map icon">
+                            <img src="/img/map-icon.svg" alt="map icon">
                         </div>
                         <p>Serving South Jersey and Philadelphia Areas</p>
                     </span>
                     <span class="footer-info-line">
                         <div class="img-wrapper info-pic">
-                            <img src="./img/phone-footer-icon.svg" alt="phone icon">
+                            <img src="/img/phone-footer-icon.svg" alt="phone icon">
                         </div>
                         <p><a href="tel:609-415-3735">(609) 415-3735</a></p>
                     </span>
                     <span class="footer-info-line">
                         <div class="img-wrapper info-pic">
-                            <img src="./img/email-footer-icon.svg" alt="phone-icon">
+                            <img src="/img/email-footer-icon.svg" alt="phone-icon">
                         </div>
                         <p><a href="mailto:nick@thomasandsonlandscaping.com">nick@thomasandsonlandscaping.com</a></p>
                     </span>
@@ -840,26 +868,26 @@
                 <div class="footer-services">
                     <h4>SERVICES</h4>
                     <ul class="footer-services-list">
-                        <li><a href="./pages/services/lawn-mowing.html">Lawn Mowing</a></li>
-                        <li><a href="./pages/services/aeration-dethatching.html">Aeration & Dethatching</a></li>
-                        <li><a href="./pages/services/mulch.html">Mulch Installation</a></li>
-                        <li><a href="./pages/services/pruning.html">Bush & Tree Pruning</a></li>
-                        <li><a href="./pages/services/leaf-removal.html">Leaf Removal & Disposal</a></li>
-                        <li><a href="./pages/services/gutter-cleaning.html">Gutter Cleaning</a></li>
-                        <li><a href="./pages/services/snow-removal.html">Snow Removal</a></li>
-                        <li><a href="./pages/services/ice-prevention.html">Ice Prevention</a></li>
-                        <li><a href="./pages/services/soft-washing.html">Soft Washing</a></li>
-                        <li><a href="./pages/services/power-washing.html">Power Washing</a></li>
-                        <li><a href="./pages/services/junk-removal.html">Junk Removal</a></li>
+                        <li><a href="/services/lawn-mowing.html">Lawn Mowing</a></li>
+                        <li><a href="/services/aeration-dethatching.html">Aeration & Dethatching</a></li>
+                        <li><a href="/services/mulch.html">Mulch Installation</a></li>
+                        <li><a href="/services/pruning.html">Bush & Tree Pruning</a></li>
+                        <li><a href="/services/leaf-removal.html">Leaf Removal & Disposal</a></li>
+                        <li><a href="/services/gutter-cleaning.html">Gutter Cleaning</a></li>
+                        <li><a href="/services/snow-removal.html">Snow Removal</a></li>
+                        <li><a href="/services/ice-prevention.html">Ice Prevention</a></li>
+                        <li><a href="/services/soft-washing.html">Soft Washing</a></li>
+                        <li><a href="/services/power-washing.html">Power Washing</a></li>
+                        <li><a href="/services/junk-removal.html">Junk Removal</a></li>
                     </ul>
                 </div>
                 <div class="footer-browse">
                     <h4>BROWSE</h4>
                     <ul class="footer-browse-list">
-                        <li><a href="./pages/services.html">Services</a></li>
-                        <li><a href="./pages/about.html">About</a></li>
-                        <li><a href="./pages/gallery.html">Gallery</a></li>
-                        <li><a href="./pages/contact.html" class="footer-book">BOOK FREE ESTIMATE</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/contact.html" class="footer-book">BOOK FREE ESTIMATE</a></li>
                     </ul>
                 </div>
             </div>
@@ -872,8 +900,8 @@
         </div>
     </footer>
     </main>
-    <script src="./js/index-script.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="/js/index-script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
