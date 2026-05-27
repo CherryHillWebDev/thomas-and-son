@@ -1548,10 +1548,16 @@ a.cta {
     transform: scale(1);
 }
 
+#modalImage {
+    max-height: 90vh;
+}
+
 .modal-content img {
     width: 100%;
     height: auto;
+    max-height: 100%;
     display: block;
+    object-fit: contain;
 }
 
 .modal-info {
